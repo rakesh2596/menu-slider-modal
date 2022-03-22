@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content  ="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" 
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="style.css">
+    <title>Menu Slider & Modal</title>
+</head>
+    <body>
+        <nav>
+          <div class="logo">
+            <img src="Images/WhatsApp Image 2022-02-09 at 9.47.46 PM (1).jpeg" alt="user" />
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </nav>
+    
+        <header>  
+          <button class="toggle" id="toggle" >
+            <i class="fa fa-bars fa-1x"></i>  <!-- //to add icons. -->
+          </button>
+    
+          <h1>My Short Bio</h1>
+    
+          <p>Software Engineer Trainee at CoStrategix</p>
+    
+          <button class="cta-btn" id="open">Sign Up</button>
+        </header>
+    
+        <div class="container">
+          <h2>What is this short bio about?</h2>
+          <p>
+            My name is Rakesh and I work as a Software Engineer for CoStrategix.
+            I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological 
+            advances that happen every day at Oswald Tech. I graduated from the California Institute of Technology in 2016 with a 
+            Bachelor's Degree in Software Development. 
+            While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills.
+          </p>
+    
+          <h2>Tell Me More</h2>
+          <p>
+            Rakesh is a powerful force in the workplace and uses his positive attitude and tireless energy to encourage others to 
+            work hard and succeed. 
+          </p>
+    
+          <h2>Daily routines</h2>
+          <ul>
+            <li>Your interests outside of work
+              Your backstory</li>
+            <li>What gets you up in the morning </li>
+            <li>Your passions and values and goals
+            </li>
+          </ul>
+    
+          <p>
+            Closing Statement
+              Briefly stating any current or upcoming projects. If you don’t have any new upcoming projects, you can
+            state where you currently live and/or what you like to do in your spare time, etc. 
+          </p>
+        </div>
+    
+        <!-- Modal- A dialog box/popup window that is displayed on top of the current page:-->
+        <div class="modal-container" id="modal">
+          <div class="modal">
+            <button class="close-btn" id="close">  
+              <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+              <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+              <p>Register with us to get offers, support and more...</p>
+              <form class="modal-form">
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Enter Name" class="form-input"/>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Enter Email" class="form-input"/>
+                </div>
+                <div>
+                  <label for="password">Password</label>
+                  <input type="password" id="password" placeholder="Enter Password" class="form-input"/>
+                </div>
+                <div>
+                  <label for="password2">Confirm Password</label>
+                  <input type="password" id="password2" placeholder="Re-enter Password" class="form-input"/>
+                </div>
+                <input type="submit" value="Submit" class="submit-btn"/>
+              </form>
+            </div>
+          </div>
+        </div>
+<script src="script.js"></script>
+</body>   
+</html>
